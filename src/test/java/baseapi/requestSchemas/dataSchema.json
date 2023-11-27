@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+      "jobId",
+      "jobTitle",
+      "jobDescription",
+      "experience",
+      "project"
+  ],
+  "properties": {
+      "jobId": {
+          "type": "integer",
+          "default": 0,
+          "title": "The jobId Schema",
+          "examples": [
+              30
+          ]
+      },
+      "jobTitle": {
+          "type": "string",
+          "default": "",
+          "title": "The jobTitle Schema",
+          "examples": [
+              "Platform Engineer2"
+          ]
+      },
+      "jobDescription": {
+          "type": "string",
+          "default": "",
+          "title": "The jobDescription Schema",
+          "examples": [
+              "To assure continuous integration and delivery"
+          ]
+      },
+      "experience": {
+          "type": "array",
+          "default": [],
+          "title": "The experience Schema",
+          "items": {
+              "type": "string",
+              "title": "A Schema",
+              "examples": [
+                  "Google",
+                  "Apple",
+                  "Mobile Iron"
+              ]
+          },
+          "examples": [
+              ["Google",
+                  "Apple",
+                  "Mobile Iron"
+              ]
+          ]
+      },
+      "project": {
+          "type": "array",
+          "default": [],
+          "title": "The project Schema",
+          "items": {
+              "type": "object",
+              "default": {},
+              "title": "A Schema",
+              "required": [
+                  "projectName",
+                  "technology"
+              ],
+              "properties": {
+                  "projectName": {
+                      "type": "string",
+                      "default": "",
+                      "title": "The projectName Schema",
+                      "examples": [
+                          "Movie App"
+                      ]
+                  },
+                  "technology": {
+                      "type": "array",
+                      "default": [],
+                      "title": "The technology Schema",
+                      "items": {
+                          "type": "string",
+                          "title": "A Schema",
+                          "examples": [
+                              "AWS",
+                              "Azure"
+                          ]
+                      },
+                      "examples": [
+                          ["AWS",
+                              "Azure"
+                          ]
+                      ]
+                  }
+              },
+              "examples": [{
+                  "projectName": "Movie App",
+                  "technology": [
+                      "AWS",
+                      "Azure"
+                  ]
+              }]
+          },
+          "examples": [
+              [{
+                  "projectName": "Movie App",
+                  "technology": [
+                      "AWS",
+                      "Azure"
+                  ]
+              }]
+          ]
+      }
+  },
+  "examples": [{
+      "jobId": 30,
+      "jobTitle": "Platform Engineer2",
+      "jobDescription": "To assure continuous integration and delivery",
+      "experience": [
+          "Google",
+          "Apple",
+          "Mobile Iron"
+      ],
+      "project": [{
+          "projectName": "Movie App",
+          "technology": [
+              "AWS",
+              "Azure"
+          ]
+      }]
+  }]
+}

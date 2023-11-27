@@ -1,0 +1,22 @@
+{
+    "experience": [
+      "Senior HANNA4 Developer"
+    ],
+    "jobDescription": "Directing tech teams",
+    "jobId": "#(jobId)",
+    "jobTitle": "Tech Director",
+    "project": [
+      {
+        "projectName": "POM",
+        "technology": [
+          "Java"
+        ]
+      },
+      {
+        "projectName": "DOM",
+        "technology": [
+          "GO"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,9 @@
+{
+  "jobId": "#(jobId)",
+  "jobTitle": "#(jobTitle)",
+  "jobDescription": "Develop Google functionality2",
+  "experience": ["Javascript2"],
+  "project": [
+    { "projectName": "Javascript App2", "technology": ["SDK", "Azure"] }
+  ]
+}

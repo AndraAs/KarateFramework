@@ -1,0 +1,9 @@
+{
+  "jobId": "#(jobId)",
+  "jobTitle": "#(jobTitle)",
+  "jobDescription": "#(jobDescription)",
+  "experience": ["AWS", "Azure", "Mobile"],
+  "project": [
+    { "projectName": "Movie App", "technology": ["AWS", "Azure"] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "jobId": "#(jobId)",
+  "jobTitle": "DevOps",
+  "jobDescription": "To assure continuous integration and delivery",
+  "experience": ["Google", "Apple", "Mobile Iron"],
+  "project": [
+    { "projectName": "Movie App", "technology": ["AWS", "Azure"] }
+  ]
+}
