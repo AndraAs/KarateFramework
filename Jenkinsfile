@@ -44,7 +44,7 @@ pipeline {
                 //define step
                 echo 'Test Execution started'
                 script{
-                    sh "mvn -P $Environment test"
+                    sh "mvn -P ${params.Environment} test"
                 }
                 echo 'Test Execution completed'
             }
