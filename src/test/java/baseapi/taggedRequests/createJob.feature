@@ -2,7 +2,7 @@ Feature: To create the job entry in the app
     Use POST url to create job entry in app
 
     Background: Initialize base url
-        Given url 'http://localhost:9897'
+        Given url _url
 
     Scenario: POST request to create job entry in JSON format
         Given path '/normal/webapi/add'
