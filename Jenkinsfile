@@ -1,5 +1,8 @@
 pipeline {
     agent any
+
+    parameters { choice(name: 'Environment', choices: ['staging', 'preprod', 'prod'], description: 'Profile needs to be used while executing tests') }
+
     tools{
         maven 'MAVEN'
     }
@@ -41,7 +44,7 @@ pipeline {
                 //define step
                 echo 'Test Execution started'
                 script{
-                    sh "mvn test"
+                    sh "mvn -P $Environment test"
                 }
                 echo 'Test Execution completed'
             }
